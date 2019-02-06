@@ -1,0 +1,71 @@
+html {
+  font-family: 'Arial';
+  box-sizing: border-box; }
+
+* {
+  line-height: 1.2; }
+
+p {
+  margin: 0px;
+  letter-spacing: -0.5px; }
+
+a {
+  color: #ff0000; }
+
+.text-decorated {
+  color: #bbb; }
+
+.Page {
+  border: 1px solid #ddd;
+  max-width: 1140px;
+  min-width: 300px;
+  margin: 0 auto; }
+  .Page-flex-wrapper {
+    display: flex;
+    justify-content: space-around; }
+  .Page-header {
+    text-align: center;
+    border: 1px dashed #ddd;
+    font-weight: bold;
+    position: relative; }
+    .Page-header-title h1 {
+      font-size: 1.2em;
+      color: #ff0000;
+      margin: 5px 0;
+      font-weight: bolder;
+      letter-spacing: -1.5px; }
+    .Page-header-date {
+      font-size: 0.7em;
+      font-style: italic;
+      color: #bbb;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      font-weight: bold;
+      letter-spacing: -1px; }
+  .Page-content {
+    border-left: 1px dashed #ddd;
+    border-right: 1px dashed #ddd; }
+    .Page-content-item {
+      padding: 7px;
+      margin: 7px;
+      border: 1px dashed #ddd;
+      margin-bottom: 7px; }
+      .Page-content-item-title {
+        font-size: 0.875em;
+        margin: 0;
+        font-weight: 900; }
+        .Page-content-item-title--subheading {
+          font-size: 0.750em; }
+      .Page-content-item-description {
+        font-size: 0.563em;
+        margin: 0; }
+  .Page-footer {
+    border: 1px dashed #ddd;
+    padding: 7px; }
+    .Page-footer-copyright {
+      font-size: 0.6em; }
+
+@media (max-width: 390px) {
+  .Page-header-date {
+    position: static; } }

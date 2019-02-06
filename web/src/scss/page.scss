@@ -1,0 +1,86 @@
+.Page {
+    border: 1px solid $color-gray;
+    max-width: 1140px;
+    min-width: 300px;
+    margin: 0 auto;
+
+    &-flex-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-header {
+        text-align: center;
+        border: 1px dashed $color-gray;
+        font-weight: bold;
+        position: relative;
+
+        &-title {
+            h1 {
+                font-size: 1.2em;
+                color: $color-red;
+                margin: 5px 0;
+                font-weight: bolder;
+                letter-spacing: -1.5px;
+            }
+        }
+
+        &-date {
+            font-size: 0.7em;
+            font-style: italic;
+            color: $color-dark-gray;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+    }
+
+    &-content {
+        border-left: 1px dashed $color-gray;
+        border-right: 1px dashed $color-gray;
+
+        &-item {
+            padding: 7px;
+            margin: 7px;
+            border: 1px dashed $color-gray;
+            margin-bottom: 7px;
+
+            &-title {
+                font-size: 0.875em;
+                margin: 0;
+                font-weight: 900;
+
+                &--subheading {
+                    font-size: 0.750em;
+                }
+            }
+
+            &-description {
+                font-size: 0.563em;
+                margin: 0;
+            }
+        }
+    }
+
+    &-footer {
+        border: 1px dashed $color-gray;
+
+        padding: 7px;
+
+        &-copyright {
+            font-size: 0.6em;
+        }
+    }
+}
+
+@media (max-width:$col-xs-max) {
+    .Page{
+        &-header {
+            &-date {
+                position: static;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+html {
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+
+* {
+    line-height: 1.2;
+}
+
+p {
+    margin: 0px;
+    letter-spacing: -0.5px;
+}
+
+a {
+    color: $color-red;
+}
+.text-decorated {
+    color: $color-dark-gray;
+}
+
+
